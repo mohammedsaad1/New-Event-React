@@ -1,16 +1,17 @@
-import { Overview } from "./design-system/Components/Overview/Overview";
-import DataView from "./design-system/Components/Overview/Data";
+import { CreativeSpeaker } from "./design-system/Components/CreativeSpeaker/CreativeSpeaker";
+import data from "./design-system/Components/CreativeSpeaker/Data";
 function App() {
   return (
     <div className="App">
       <div style={{ display: "flex" }}>
-        {DataView.map((item) => {
+        {data.map((card) => {
           return (
-            <Overview
-              icon={item.icon}
-              title={item.title}
-              Children={item.description}
-              key={item.id}
+            <CreativeSpeaker
+              name={card.name}
+              alt={card.alt}
+              key={card.id}
+              img={card.img}
+              jop={card.jop}
             />
           );
         })}
