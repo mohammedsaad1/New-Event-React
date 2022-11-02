@@ -1,12 +1,13 @@
 import styled from "@emotion/styled";
+import theme from "../../config";
+
 export const SpeakerWraper = styled("div")`
   label: SpeakerWraper;
   width: 285px;
   text-align: center;
-  border-radius: 50%;
+  color: ${theme.gray};
 
   border-radius: 50%;
-  z-index: 0;
 `;
 export const Image = styled("img")`
   label: Image;

@@ -1,5 +1,6 @@
 import { CreativeSpeaker } from "./design-system/Components/CreativeSpeaker/CreativeSpeaker";
 import data from "./design-system/Components/CreativeSpeaker/Data";
+import "./design-system/main.css";
 function App() {
   return (
     <div className="App">
