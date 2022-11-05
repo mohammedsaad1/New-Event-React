@@ -1,5 +1,5 @@
-import sponser1 from "../../../Shared/assets/ourprograms/sponsor-img2.jpg";
-import sponser2 from "../../../Shared/assets/ourprograms/sponsor-img3.jpg";
+import sponser1 from "images/ourprograms/sponsor-img2.jpg";
+import sponser2 from "images/ourprograms/sponsor-img3.jpg";
 import sponser3 from "../../../Shared/assets/ourprograms/sponsor-img4.jpg";
 const Datasponsers = [
   {

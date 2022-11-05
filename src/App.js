@@ -1,3 +1,4 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Dataprogram from "./design-system/Components/Ourprograms/Dataprograms";
 import Ourprograms from "./design-system/Components/Ourprograms/Ourprograms";
 import Datasponsers from "./design-system/Components/OurSponsers/Datasponser";
@@ -5,15 +6,14 @@ import Datasponsers from "./design-system/Components/OurSponsers/Datasponser";
 import { Oursponsers } from "./design-system/Components/OurSponsers/Oursponsers";
 
 import "./design-system/main.css";
+import Home from "./Pages/Home";
 function App() {
   return (
-    <div className="App">
-      <div style={{ display: "flex", gap: "1rem" }}>
-        {Datasponsers.map((item) => {
-          return <Oursponsers key={item.id} src={item.img} alt={item.alt} />;
-        })}
-      </div>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 export default App;
