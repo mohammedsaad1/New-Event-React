@@ -4,6 +4,8 @@ export const NavbarWrapper = styled("section")`
   label: NavbarWrapper;
   background-color: ${theme.black};
   color: white;
+  width: 100%;
+  position: fixed;
   padding: 1.5rem 0;
 `;
 export const NavbarContainer = styled("section")`
